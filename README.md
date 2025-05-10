@@ -97,3 +97,19 @@
 - Building
 - Testing
 - Deployment
+
+### Database Design
+#### Top - down steps:
+- Step 1: Determining Entities
+- Step 2: Determining Attributes for Each Entities
+- Step 3: RelationShips Among Entities
+
+### Cardinality
+- Relationship cardinality in database specifies how many instances of one entity are associated with how many instance of another entity.
+
+- One to One (1:1)
+- One to Many (1:N)
+- Many to One (N:1)
+- Many to Many (N:N)
+- Optional One to One (0..1:0..1)
+- Optional One to Many (0..1:N)
