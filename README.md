@@ -4,7 +4,7 @@
 
 ### What is database?
 
-- A database is a structured collection of related data that represent some real world entities and are organized for efficient retrival  storage and management.
+- A database is a structured collection of related data that represent some real world entities and are organized for efficient retrival storage and management.
 
 ### What is data?
 
@@ -20,7 +20,8 @@
 - Document -> MongoDB, Amazon DynamoDB
 - Key Value -> Redis
 
-### Database Model 
+### Database Model
+
 - Hierarchical
 - Network
 - Relational
@@ -28,26 +29,30 @@
 - Key Value
 
 ### Hierarchical
+
 - Used Tree Structure
 - Data visualization problem
 - Every children can't have more than one parent (problem)
 
 ### Network
+
 - Can have more than one parent of a child
 - Navigational complexity higher
 - Schema Definition (more complex to define than relational structure)
 - Lack of standardization (no fixed query language)
 
 ### Relational
+
 - Used different table to store data
 - Maintain entity
 
-
 ### What is key?
+
 - a key in a relational database is a field or a combination of fields that uniquely identifies a record in a table
 
 ### Types of key
-- Primary key 
+
+- Primary key
 - Super key
 - Candidate key
 - Alternate key
@@ -55,14 +60,40 @@
 - Foreign key
 
 ### Super key
+
 - Attribute or set of attribute by which we can identify each row uniquely
 - Could be a single attribute or a set of attributes
 - Could have null values in the set
 - It actually a superset
 
 ### Candidate key
-- Super key whose proper subset is not a super key
+
+- Super key whose proper subset is not a super key (super key that can't be broken is called candidate key)
 - Also called Minimal Super key
 - Potential Primary key: From the candidate keys, one is chosen as the primary key. However all candidate keys are potential choices for the primary key
 
 ### Primary key
+
+- Should be unique, not null and stable
+- From the candidate key, one key is chosen as the primary key for the table. The primary key is a specific candidate key that is selected as the main identifier for the records in the table
+
+### Alternate kry
+
+- Candidate keys which are not chosen as primary key
+
+### Composite key
+
+- Candidate key which were not chosen as primary key
+
+### Foreign key
+
+- A foreign key is a column in one table that refers to the primary key of another table, creating a link between the two tables in a relational database
+
+### Software Development Life Cycle (SDLC)
+
+- Planning
+- Analysis
+- System Design
+- Building
+- Testing
+- Deployment
