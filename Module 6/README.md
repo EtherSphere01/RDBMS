@@ -43,3 +43,10 @@ then, t1,y = t2.y
 
 - Must be 1NF.
 - Must not contain any non-prime or non-key attribute that is functionally dependent on a proper subset of any candidate key of the relation.
+
+### 3NF
+
+`Rules`
+
+- Must be in 2NF.
+- Must not contain transitive dependency.
