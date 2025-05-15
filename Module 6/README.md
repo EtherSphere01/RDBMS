@@ -51,4 +51,3 @@ then, t1,y = t2.y
 - Must be in 2NF.
 - Must not contain transitive dependency.
 
-<!-- git push -->
