@@ -52,3 +52,11 @@ SELECT * FROM students WHERE age > 20;
 SELECT * from students where grade = 'A' and course = 'History';
 
 SELECT * from students where (country = 'USA' or country = 'UK') and age > 20;
+
+
+SELECT concat(first_name, ' ', last_name) as "Full Name", age, course FROM students WHERE age > 20;
+SELECT * FROM students WHERE first_name LIKE 'J%';
+
+SELECT max(length(first_name)) as "Max Length of First Name" FROM students;
+
+select count(*) as "Total Students" from students;
