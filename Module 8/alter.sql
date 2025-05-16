@@ -1,4 +1,4 @@
--- Active: 1746382175204@@localhost@5432@test_db
+-- Active: 1746382175204@@localhost@5432@test_db@public
 
 select * from person;
 
@@ -23,4 +23,18 @@ ALTER TABLE person
  ALTER TABLE person
  ALTER COLUMN user_age DROP NOT NULL;
 
+
+-- Ensure all values in user_age are unique before adding the constraint
+-- DELETE FROM person WHERE user_age IN (
+--     SELECT user_age FROM person GROUP BY user_age HAVING COUNT(*) > 1
+-- );
+
+ALTER TABLE person
+ADD CONSTRAINT unique_person_user_age UNIQUE (user_age);
+
+ALTER TABLE person
+DROP CONSTRAINT unique_person_user_age 
+
+
+-- Truncate table person;
 
