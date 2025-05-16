@@ -48,3 +48,7 @@ SELECT DISTINCT country FROM students ORDER BY country ASC;
 
 --data filtering
 SELECT * FROM students WHERE age > 20;
+
+SELECT * from students where grade = 'A' and course = 'History';
+
+SELECT * from students where (country = 'USA' or country = 'UK') and age > 20;
