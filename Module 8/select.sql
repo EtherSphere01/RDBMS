@@ -35,3 +35,16 @@ INSERT INTO students (first_name, last_name, age, grade, course, email, dob, blo
 
 -- Query to select all students
 SELECT * FROM students;
+
+SELECT email, email as "student email" FROM students;
+
+SELECT * FROM students ORDER BY first_name ASC;
+
+SELECT * FROM students ORDER BY last_name DESC;
+
+SELECT DISTINCT email, country from students ORDER BY country ASC, email DESC;
+
+SELECT DISTINCT country FROM students ORDER BY country ASC;
+
+--data filtering
+SELECT * FROM students WHERE age > 20;
