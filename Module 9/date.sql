@@ -30,3 +30,6 @@ WHERE dob < CURRENT_DATE - INTERVAL '18 years';
 
 select extract(YEAR FROM dob) from students;
 
+--type cast;
+select 'n'::boolean;
+
