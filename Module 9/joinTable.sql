@@ -27,3 +27,4 @@ cross join "user"
 select * from post
 natural join "user"
 
+-- 
